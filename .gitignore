@@ -1,0 +1,7 @@
+/qdrant_storage/
+/.idea/
+.idea
+/simple-document-service/uploads/
+/simple-document-service/models/
+/.venv/
+/simple-document-service/log.csv

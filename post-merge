@@ -1,0 +1,10 @@
+#!/bin/sh
+docker-compose run --rm test
+
+# Проверка результата выполнения тестов
+if [ $? -eq 0 ]; then
+  echo "Тесты прошли успешно. Перезапуск prod контейнера с новыми файлами."
+  docker-compose up --build prod
+else
+  echo "Тесты не прошли. Оставляем на месте"
+fi
